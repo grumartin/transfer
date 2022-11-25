@@ -20,7 +20,6 @@ const Transfer = () => {
             const signer = provider.getSigner();        //get signer
             const DIASigner = contract.connect(signer);     //connect contract to signer
             let tx = DIASigner.transfer("0x15433DA387451F9dE4565280C85506CB71aF9376", ethers.utils.parseUnits("10.0", 18));
-            console.log("Transaction Hash: " + tx);
         })
     }else{
         console.log("You need to install MetaMask");
